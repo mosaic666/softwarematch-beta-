@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html  lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>注册</title>
+<link href="./Wopop_files/style_log.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+</head>
+<body class="login" mycollectionplug="bind">
+<div class="login_m">
+    <div class="login_logo"><img src="Wopop_files/logo.png" style="width:100%;height:100%;margin-top:-35%"></div>
+    <form style="margin-top: -40%;" method="post" action="add.php">
+    <div class="login_boder">
+        <div class="login_padding" id="login_model" style="height: 460px;">
+            <h2  style="font-family: 宋体;font-size: 16px">手机号码</h2>
+            <label>
+                <input required="required" type="text" id="username" class="txt_input txt_input2"  placeholder="电话号码" name="username">
+            </label>
+            <h2 style="font-family: 宋体;font-size: 16px;margin-top: -1%">密码</h2>
+            <label>
+                <input required="required" type="password" name="paw1" id="userpwd" class="txt_input" placeholder="密码">
+            </label>
+            <h2 style="font-family: 宋体;font-size: 16px">确认密码</h2>
+            <label>
+                <input required="required" type="password" name="paw2" id="userpwd1" class="txt_input" placeholder="确认密码">
+            </label>
+
+
+            <input type="text" name='authcode' value='' class="txt_input" style="width: 50%;margin-top: 5%" placeholder="请输入验证码">
+            <img id="captcha_img" border='1' src='./captcha.php?r=<?php echo rand(); ?>' style="width:100px; height:35px">
+            <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='./captcha.php?r='+Math.random()" style="font-size: 12px">换一个?</a>
+
+
+            <div class="rem_sub" style="margin-top: 5%">
+                <div class="rem_sub_l" style="margin-top: 1%">
+                    <input type="checkbox" name="checkbox" id="save_me">
+                    <label for="checkbox" style="font-size: 14px">记住我</label>
+                </div>
+                <label>
+                    <input type="submit" class="sub_button" name="button" id="button" value="注册" style="opacity:1;margin-top: 1%">
+                </label>
+                <label  name="register" id="regist" style="margin-top:-11%"><a href="login.html" style="font-size: 14px;">去登录</a>
+                </label>
+            </div>
+        </div>
+        <div id="forget_model" class="login_padding" style="display:none">
+            <br>
+            <h1>Forgot password</h1>
+            <br>
+            <div class="forget_model_h2">(Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)</div>
+            <label>
+                <input type="text" id="usrmail" class="txt_input txt_input2">
+            </label>
+            <div class="rem_sub">
+                <div class="rem_sub_l">
+                </div>
+                <label>
+                    <input type="submit" class="sub_buttons" name="button" id="Retrievenow" value="Retrieve now" style="opacity: 0.7;">
+                    <input type="submit" class="sub_button" name="button" id="denglou" value="Return" style="opacity: 0.7;">　　
+                </label>
+            </div>
+        </div>
+        <!--login_padding  Sign up end-->
+    </div><!--login_boder end-->
+        </form>
+</div><!--login_m end-->
+</body>
+</html>

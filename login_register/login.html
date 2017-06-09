@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html  lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>登录</title>
+<link href="./Wopop_files/style_log.css" rel="stylesheet" type="text/css">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+</head>
+<body class="login" mycollectionplug="bind">
+<div class="login_m">
+    <div class="login_logo"><img src="Wopop_files/logo.png" style="width:100%;height:100%;margin-top:-35%"></div>
+    <form style="margin-top: -40%;" method="post" action="denglu.php">
+        <div class="login_boder">
+            <div class="login_padding" id="login_model">
+                <h2 style="font-family: 宋体;font-size: 16px">手机号码</h2>
+                <label>
+                    <input required="required" type="text" id="username" class="txt_input txt_input2" placeholder="电话号码" name="username">
+                </label>
+                <h2 style="font-family: 宋体;font-size: 16px;margin-top: -5%">密码</h2>
+                <label>
+                    <input required="required" type="password" name="password" id="userpwd" class="txt_input" placeholder="密码">
+                </label>
+                <input type="text" name='authcode' value='' class="txt_input" style="width: 50%;margin-top: 5%" placeholder="请输入验证码">
+                <img id="captcha_img" border='1' src='./captcha.php?r=<?php echo rand(); ?>' style="width:100px; height:35px">
+                <a href="javascript:void(0)" onclick="document.getElementById('captcha_img').src='./captcha.php?r='+Math.random()" style="font-size: 12px">换一个?</a>
+                <div class="rem_sub_l" style="margin-top:8%;font-size: 14px">
+                    <label>登录身份</label>
+                    <label>
+                        <input type="radio" name="ID" value="user" id="user"  checked/>
+                        消费者</label>
+                    <label>
+                        <input type="radio" name="ID" value="root" id="root" />
+                        管理员</label>
+                </div>
+                <p class="forgot" style="width: 296px;margin-top: -8.5%"><a id="iforget" href="javascript:void(0);" style="font-size: 14px;">忘记密码？</a></p>
+                <div class="rem_sub">
+                    <label style="margin-top:10%;margin-left:18%">
+                        <input type="submit" class="sub_button" onclick="validateCode();" value="登录" style="opacity:1">
+                    </label>
+                    <label  name="register" id="regist" style="margin-top:-13%"><a href="register.html" style="font-size: 14px;margin-left:0%;">去注册</a>
+                    </label>
+                </div>
+            </div>
+            <div id="forget_model" class="login_padding" style="display:none">
+                <br>
+                <h1>Forgot password</h1>
+                <br>
+                <div class="forget_model_h2">(Please enter your registered email below and the system will automatically reset users’ password and send it to user’s registered email address.)</div>
+                <label>
+                    <input type="text" id="usrmail" class="txt_input txt_input2">
+                </label>
+                <div class="rem_sub">
+                    <div class="rem_sub_l">
+                    </div>
+                    <label>
+                        <input type="submit" class="sub_buttons" name="button" id="Retrievenow" value="Retrieve now" style="opacity: 0.7;">
+                        <input type="submit" class="sub_button" name="button" id="denglou" value="Return" style="opacity: 0.7;">　　
+                    </label>
+                </div>
+            </div>
+            <!--login_padding  Sign up end-->
+        </div><!--login_boder end-->
+    </form>
+</div><!--login_m end-->
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+    padding-top: 50px;
+    padding-bottom: 0px;
+    color: #5a5a5a;
+	background-size:100% auto;
+	font-size:14px;
+	font-family:"宋体";
+    }
+	
+/*导航栏*/
+.heade{
+	font-size:16px;
+	background:#F6F6F6;
+	width:100%;
+	}
+/*轮播图片*/
+.picture{
+	width:100%;
+	}
+.top_top{
+	margin: auto;
+	margin-top:8px;
+}
+/*中部内容*/
+.all{
+		background:url(../images/beijing.jpg);
+	}
+.content{
+	width:80%;
+	height:auto;
+	min-height:650px;
+	margin:auto;
+	}
+.content a{
+	color:#000000;
+	}
+#left{
+	margin-left:5%;
+	float:left;
+	background:#FFFFFF;
+	width:40%;
+	height:auto;
+	min-height:550px;
+	margin-top:50px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+	}
+#right{
+	float:left;
+	width:50%;
+	margin-top:50px;
+	height:auto;
+	}
+#right_top{
+	background:#FFFFFF;
+	width:80%;
+	margin-left:15%;
+	height:auto;
+	min-height:300px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+	}
+#right_bottom{
+	background:#FFFFFF;
+	width:80%;
+	margin-left:15%;
+	height:auto;
+	min-height:250px;
+	margin-top:40px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;
+	}
+.sheng{
+	white-space:nowrap;
+	text-overflow:ellipsis;overflow:hidden;
+}
+	
+/*底部样式*/	
+.footer{
+	width:100%;
+	margin-bottom:0;
+	height:auto;
+	margin-top:40px;
+	}
+#top{
+	background:#3C3C3C;
+	width:100%;
+	height:65px;
+	color:#FFFFFF;
+	
+	}
+#one{
+	float:left;
+	margin-left:8%;
+	}
+#two{
+	float:left;
+	margin-left:8%;
+	}
+#three{
+	float:left;
+	margin-left:8%;
+	}
+#four{
+	float:left;
+	margin-left:8%;
+	}
+#five{
+	float:left;
+	margin-left:8%;
+	}
+#mid{
+	background:#4B4C4E;
+	height:210px;
+    color:#FFFFFF;
+	margin-top:0px;
+	}
+#mid a{
+	color:#FFFFFF;
+	}
+.guanyu1{
+	width:30%; margin-left:10%;float:left;
+}
+.guanyu2{
+	width:30%;float:left;
+}
+.guanyu3{
+	width:30%;float:left;
+}
+#last{
+	text-align:center;
+	background:#E1E1E1;
+	height:50px;
+	color:#000000;
+	}

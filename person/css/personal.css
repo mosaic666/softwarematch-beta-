@@ -1,0 +1,98 @@
+.main-left{
+    width: 300px;height: 400px;margin-top: 50px;float: left; margin-left: 15%;
+}
+.main-top{
+    width: 300px;height: 100px;background: #ffffff;
+}
+.main-top .btn{
+    margin-left: 60px;margin-top: 20px;
+}
+.main-bottom{
+    width: 300px;height: 300px;background: #ffffff; margin-top: 30px;
+}
+.main-bottom .text{
+    width:300px; height:300px; float:left; margin-top: 30px;font-size: 22px
+}
+.main-bottom ul{
+    list-style: none;
+}
+.main-bottom li{
+    line-height: 10px;margin-left: 60px;
+}
+.main-bottom li a{
+    text-decoration: none;
+}
+.main-bottom a:hover{
+    text-decoration: none;
+}
+.main-right{
+    width: 500px;height: 430px; background: #ffffff; margin-top: 50px;float: left;margin-left: 3%;
+}
+.main-right h3{
+    font-size: 20px;
+}
+.main-right img{
+    width: 70px;height: 70px;
+}
+.right-button .shangchuan{
+    margin-left: 60px;
+}
+.main-right .font{
+    margin-left: 25px;
+}
+.main-right .font2{
+    margin-left: 35px;
+}
+.main-right .input{
+    width: 260px; height: 35px;margin-left: 40px;margin-top: 5px;
+}
+.main-right .phone{
+    width: 260px; height: 35px; margin-left: 28px;margin-top: 5px;
+}
+.main-right .input2{
+    width: 260px; height: 35px;margin-left: 55px;margin-top: 5px;
+}
+.main-right .p2{
+    width: 260px; height: 35px;margin-left:37px;margin-top: 5px;
+}
+.main-right button{
+    width: 260px; height: 40px; background: #0072E3;
+}
+.baocun1{
+    margin-left: 110px;
+}
+.baocun2{
+    margin-left: 145px;
+}
+.main-right button:hover{
+    background: #0000E3;
+}
+@media (max-width: 767px) {
+    .main-right{
+        width: 350px; height: 680px; margin-left: 7%;
+    }
+    .main-right .font{
+        margin-left: 40px;
+    }
+    .main-right .font2{
+        margin-left: 45px;
+    }
+    .main-right .phone{
+        width: 260px; height: 35px; margin-left: 40px;margin-top: 5px;
+    }
+    .right-button .shangchuan{
+    margin-left: 110px;
+    }
+    .baocun1{
+        margin-left: 40px;
+    }
+    .baocun2{
+        margin-left: 45px;
+    }
+    .main-right .input2{
+        margin-left: 45px;
+    }
+    .main-right .p2{
+        margin-left: 45px;
+    }
+}

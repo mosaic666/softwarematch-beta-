@@ -1,0 +1,7 @@
+.position {color:#000000; font-size:20px;margin-left:10%;margin-top:2%;float: left;}
+.position a{color:#000000;}
+.position a:hover{color:#bb0000; text-decoration:underline;}
+.contentlist { margin:20px 30px 20px 30px;float: left}
+.contentlist .title { color:#000000; font-size:30px; font-weight:bolder;padding-left: 30%;padding-right: 5%}
+.contentlist .catalog ul{list-style-type: none;font-weight: bold;font-size:22px;font-family: "Adobe 宋体 Std L";color: #0f0f0f;float: left;line-height: 50px;text-align: start;}
+.content {font-size:14px; line-height:200%;letter-spacing:1px;}
